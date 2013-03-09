@@ -1,0 +1,50 @@
+﻿/* Responsive grid system */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/* override normalize */
+h1 {
+	margin: 0;
+}
+
+/* our content */
+.orange-content-item {
+	background-color: rgb(255, 128, 0);
+	height: 7em;
+	margin-bottom: 1em;
+}
+
+nav li {
+	background-color: rgb(0, 163, 217);
+	margin-bottom: 1em;
+	height: 2em;
+}
+
+header {
+	background-color: rgb(85, 85, 85);
+}
+
+.expansion-control {
+	background-color: rgb(185, 185, 200);
+	height: 2em;
+}
+
+.item-left-content {
+	background-color: rgb(83, 83, 98);
+	height: 5em;
+}
