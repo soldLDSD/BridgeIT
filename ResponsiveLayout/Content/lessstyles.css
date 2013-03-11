@@ -2,6 +2,7 @@
 /* #endregion */
 /* #region less mixins */
 /* #endregion */
+/* our content */
 *,
 *:after,
 *:before {
@@ -13,81 +14,6 @@
 h1 {
   margin: 0;
 }
-/* #region grid */
-.section {
-  clear: both;
-  padding: 0px;
-  margin: 0px;
-}
-.group {
-  zoom: 1;
-}
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.col {
-  display: block;
-  float: left;
-  margin: 1% 0 1% 1.6%;
-}
-.col:first-child {
-  margin-left: 0;
-  /* all browsers except IE6 and lower */
-
-}
-/* #region grids of 6 columns*/
-.span_6_of_6 {
-  width: 100%;
-}
-.span_5_of_6 {
-  width: 83.06%;
-}
-.span_4_of_6 {
-  width: 66.13%;
-}
-.span_3_of_6 {
-  width: 49.2%;
-}
-.span_2_of_6 {
-  width: 32.26%;
-}
-.span_1_of_6 {
-  width: 15.33%;
-}
-/* #endregion */
-/* #region grids of 8 columns */
-.span_8_of_8 {
-  width: 100%;
-}
-.span_7_of_8 {
-  width: 87.3%;
-}
-.span_6_of_8 {
-  width: 74.6%;
-}
-.span_5_of_8 {
-  width: 61.9%;
-}
-.span_4_of_8 {
-  width: 49.2%;
-}
-.span_3_of_8 {
-  width: 36.5%;
-}
-.span_2_of_8 {
-  width: 23.8%;
-}
-.span_1_of_8 {
-  width: 11.1%;
-}
-/* #endregion */
-/* #endregion */
-/* our content */
 body {
   padding-left: 3em;
   padding-right: 3em;
@@ -97,16 +23,7 @@ ul {
   margin: 0;
   padding: 0;
 }
-.orange-content-item {
-  background-color: #ff8000;
-  height: 7em;
-  margin-bottom: 1em;
-}
-nav li {
-  background-color: #00a3d9;
-  margin-bottom: 1em;
-  height: 2em;
-}
+/* #region main header */
 header {
   text-align: center;
   background-color: #555555;
@@ -114,11 +31,168 @@ header {
   margin-left: -3em;
   margin-right: -3em;
 }
+/* #endregion */
+/* #region section wrapper */
+.sectiongroup {
+  zoom: 1;
+  clear: both;
+  padding: 0px;
+  margin: 1em 0 0 0;
+}
+.sectiongroup:before,
+.sectiongroup:after {
+  content: "";
+  display: table;
+}
+.sectiongroup:after {
+  clear: both;
+}
+/* #endregion */
+/* #region main menu */
+#mainmenu {
+  display: block;
+  float: left;
+  margin-left: 1.6%;
+  width: 23.8%;
+}
+#mainmenu:first-child {
+  margin-left: 0;
+  /* all browsers except IE6 and lower */
+
+}
+#mainmenu li {
+  background-color: #00a3d9;
+  margin-bottom: 1em;
+  height: 2em;
+}
+/* #endregion */
+/* #region main content */
+#maincontent {
+  display: block;
+  float: left;
+  margin-left: 1.6%;
+  width: 74.6%;
+}
+#maincontent:first-child {
+  margin-left: 0;
+  /* all browsers except IE6 and lower */
+
+}
+.orange-content-item {
+  background-color: #ff8000;
+  height: 7em;
+  margin-bottom: 1em;
+}
+/* #endregion */
+/* #region expandable content */
+.expandable {
+  margin-bottom: 1em;
+}
 .expansion-control {
   background-color: #b9b9c8;
   height: 2em;
 }
-.item-left-content {
+.itemgroup {
+  zoom: 1;
+  padding-top: 1em;
+}
+.itemgroup:before,
+.itemgroup:after {
+  content: "";
+  display: table;
+}
+.itemgroup:after {
+  clear: both;
+}
+.itemgroup div {
+  display: block;
+  float: left;
+  margin-left: 1.6%;
+}
+.itemgroup div:first-child {
+  margin-left: 0;
+  /* all browsers except IE6 and lower */
+
+}
+.itemgroup .item-left-content {
+  width: 32.26%;
   background-color: #535362;
   height: 5em;
+}
+.itemgroup .item-right-content {
+  width: 66.13%;
+}
+/* #endregion */
+@media screen and (max-width: 639px) {
+  #mainmenu {
+    width: 100%;
+    margin-left: 0;
+  }
+  #maincontent {
+    width: 100%;
+    margin-left: 0;
+  }
+  .expandable ul {
+    display: none;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1279px) {
+  #mainmenu {
+    width: 100%;
+    margin-left: 0;
+  }
+  #mainmenu ul {
+    zoom: 1;
+  }
+  #mainmenu ul:before,
+  #mainmenu ul:after {
+    content: "";
+    display: table;
+  }
+  #mainmenu ul:after {
+    clear: both;
+  }
+  #mainmenu li {
+    display: block;
+    float: left;
+    margin-left: 1.6%;
+    width: 23.8%;
+  }
+  #mainmenu li:first-child {
+    margin-left: 0;
+    /* all browsers except IE6 and lower */
+  
+  }
+  #maincontent {
+    width: 100%;
+    margin-left: 0;
+  }
+  #topcontent {
+    zoom: 1;
+  }
+  #topcontent:before,
+  #topcontent:after {
+    content: "";
+    display: table;
+  }
+  #topcontent:after {
+    clear: both;
+  }
+  #topcontent li {
+    display: block;
+    float: left;
+    margin-left: 1.6%;
+    width: 49.2%;
+  }
+  #topcontent li:first-child {
+    margin-left: 0;
+    /* all browsers except IE6 and lower */
+  
+  }
+  .expandable ul {
+    display: none;
+  }
+}
+@media screen and (min-width: 1280px) {
+  
 }
