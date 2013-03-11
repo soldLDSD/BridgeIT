@@ -40,7 +40,7 @@ namespace ResponsiveLayout
 				//"~/Content/3cols.css",
 				//"~/Content/4cols.css",
 				//"~/Content/5cols.css",
-				//"~/Content/6cols.css",
+				"~/Content/6cols.css",
 				//"~/Content/7cols.css",
 				"~/Content/8cols.css",
 				//"~/Content/9cols.css",

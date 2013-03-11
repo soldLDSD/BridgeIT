@@ -5,7 +5,7 @@
 	margin: 0px;
 }
 
-.group:before,
+/*.group:before,*/
 .group:after {
     content:"";
     display:table;
@@ -23,6 +23,17 @@ h1 {
 }
 
 /* our content */
+body {
+	padding-left: 3em;
+	padding-right: 3em;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
 .orange-content-item {
 	background-color: rgb(255, 128, 0);
 	height: 7em;
@@ -36,7 +47,12 @@ nav li {
 }
 
 header {
+	text-align: center;
 	background-color: rgb(85, 85, 85);
+	color: white;
+	margin-left: -3em;
+	margin-right: -3em;
+
 }
 
 .expansion-control {
