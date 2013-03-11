@@ -34,20 +34,7 @@ namespace ResponsiveLayout
 			// 3rd Party CSS files
 			bundles.Add(new StyleBundle("~/Content/css").Include(
 				"~/Content/normalize.css",
-				//"~/Content/responsivegridsystem.css",
-				"~/Content/col.css",
-				//"~/Content/2cols.css",
-				//"~/Content/3cols.css",
-				//"~/Content/4cols.css",
-				//"~/Content/5cols.css",
-				"~/Content/6cols.css",
-				//"~/Content/7cols.css",
-				"~/Content/8cols.css",
-				//"~/Content/9cols.css",
-				//"~/Content/10cols.css",
-				//"~/Content/11cols.css",
-				//"~/Content/12cols.css",
-				"~/Content/styles.css"));
+				"~/Content/lessstyles.less"));
 
 			// Custom LESS files
 		}
